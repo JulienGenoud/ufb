@@ -84,7 +84,7 @@
 			 loadJSON(function(response) {
   			// Parse JSON string into object
 					var toto = JSON.parse(response);
-								showFeature(toto, roadStyle);
+								showFeature(toto);
 
  				});
 
@@ -114,6 +114,7 @@
 		function showFeature(geojson, style){
 			clearMap();
 			currentFeature_or_Features = new GeoJSON(geojson, style || null);
+
 			if (currentFeature_or_Features.type && currentFeature_or_Features.type == "Error"){
 				return;
 			}
@@ -129,19 +130,31 @@
 					}
 					else{
 						currentFeature_or_Features[i].setMap(map);
-					}
+
+						//voir commet rendre le code generique
+						/*
+							google.maps.event.addListener(map,'center_changed',function() {
+							  window.setTimeout(function() {
+							    map.panTo(currentFeature_or_Features[1].getPosition());
+							  },3000);
+							});	
+
+						*/
+				}
 					if (currentFeature_or_Features[i].geojsonProperties) {
 						setInfoWindow(currentFeature_or_Features[i]);
 					}
 				}
 			}else{
-				currentFeature_or_Features.setMap(map)
+				currentFeature_or_Features.setMap(map);
 				if (currentFeature_or_Features.geojsonProperties) {
 					setInfoWindow(currentFeature_or_Features);
 				}
 			}
 
 		}
+
+	
 
 		function setInfoWindow (feature) {
 			google.maps.event.addListener(feature, "click", function(event) {
