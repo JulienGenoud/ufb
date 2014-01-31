@@ -1,0 +1,190 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+
+html,
+button,
+input,
+select,
+textarea {
+    background-color:#ddd;
+    color: #222;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400; 
+}
+
+html {
+    height: 100%;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#map-canvas { 
+    z-index: 0;
+    height: 100% 
+}
+
+
+h2 {
+    margin:0;
+    padding:0;
+    font-size: 3em;
+    text-shadow: 0px 2px 2px #121212;
+}
+
+h3 {
+    margin:0;
+    padding:0;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+
+h4 {
+    margin:0;
+    padding:0;
+    font-size: 1.6em;
+    font-style:italic;
+    color: #656565;
+    text-shadow: 0px 1px 1px #757575;
+    margin-left:200px;
+}
+
+#index {
+    z-index: 2;
+    font-weight: 700; 
+    top: 0px;
+    margin-top: 0px;
+    position: fixed;
+    padding: 10px 15px 15px 10px;
+    margin: 30px 0 0 20px;
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 8
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    */
+}
+
+#nav > div#buttons {
+    right: 0px;
+}
+
+#nav > div#buttons > a {
+    margin-right: 20px;
+}
+
+
+#index > h3 > a {
+    color: #E8E8E8;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+#index > h3 > a > b {
+    font-size: 1.5em;
+}
+
+
+#index > h4 {
+    font-size: 1.3em;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+#panel {
+    z-index: 2;
+    font-weight: 700; 
+    top: 0px;
+    bottom: 10px;
+    right: 0px;
+    margin-top: 0px;
+    position: fixed;
+    margin: 30px 50px 20px 20px;
+
+    height: 80%;
+    width: 260px;
+
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 8
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    */
+}
+
+#panel > h3 {
+    width: 100%;
+    color: #E8E8E8;
+    padding: 10px 0 15px 0;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*@media screen and (min-width: 1200px) {
+    section {
+        width: 1000px; 
+    }
+}*/
