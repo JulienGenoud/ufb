@@ -130,17 +130,9 @@
 					}
 					else{
 						currentFeature_or_Features[i].setMap(map);
-
-						//voir commet rendre le code generique
-						/*
-							google.maps.event.addListener(map,'center_changed',function() {
-							  window.setTimeout(function() {
-							    map.panTo(currentFeature_or_Features[1].getPosition());
-							  },3000);
-							});	
-
-						*/
 				}
+					//do specific thing to all markers
+					setZoom(currentFeature_or_Features[i]);
 					if (currentFeature_or_Features[i].geojsonProperties) {
 						setInfoWindow(currentFeature_or_Features[i]);
 					}
@@ -154,7 +146,14 @@
 
 		}
 
-	
+			function setZoom (feature) {
+				google.maps.event.addListener(feature, "click", function(event) {
+						window.setTimeout(function() {
+						    map.setZoom(9);
+ 								 map.setCenter(feature.getPosition());
+						});
+				});
+			}
 
 		function setInfoWindow (feature) {
 			google.maps.event.addListener(feature, "click", function(event) {
