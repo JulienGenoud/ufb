@@ -12,3 +12,7 @@ Faire une Doc:
 http://heelhook.github.io/chardin.js/
 http://github.hubspot.com/shepherd/docs/welcome/
 
+pour ajouter des event sur les marqueurs :
+  https://developers.google.com/maps/documentation/javascript/examples/event-simple
+  http://stackoverflow.com/questions/6611634/google-maps-api-v3-add-event-listener-to-all-markers
+  
