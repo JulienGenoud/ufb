@@ -1,6 +1,8 @@
 URBAN FLASH BACK DISCOUNTINUED
 ===
 
+to restore
+> $ git checkout cbe0420
 
 AngularJS tuto:
 https://github.com/angular/angular-phonecat
